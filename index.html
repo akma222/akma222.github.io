@@ -6,42 +6,111 @@
     <title>AKMABORHAN Profile</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #e0e7ff 0%, #f4f4f4 100%);
             margin: 0;
             padding: 0;
         }
         .profile-container {
             max-width: 500px;
             margin: 60px auto;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            padding: 40px 30px;
+            background: rgba(255,255,255,0.95);
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+            padding: 48px 36px 36px 36px;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .profile-avatar {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #0078d7;
+            margin-bottom: 18px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            background: #e0e7ff;
         }
         .profile-name {
-            font-size: 2.2em;
+            font-size: 2.3em;
             font-weight: bold;
-            color: #333;
+            color: #222;
+            letter-spacing: 1px;
         }
         .profile-title {
-            font-size: 1.2em;
+            font-size: 1.15em;
             color: #0078d7;
-            margin-bottom: 20px;
+            margin-bottom: 18px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
         }
         .profile-desc {
+            font-size: 1.05em;
+            color: #444;
+            margin-bottom: 24px;
+        }
+        .profile-contact {
+            margin-top: 18px;
+        }
+        .profile-contact a {
+            display: inline-block;
+            margin: 0 8px;
+            color: #fff;
+            background: #0078d7;
+            padding: 8px 18px;
+            border-radius: 22px;
+            text-decoration: none;
             font-size: 1em;
-            color: #555;
+            transition: background 0.2s;
+        }
+        .profile-contact a:hover {
+            background: #005fa3;
+        }
+        .profile-skills {
+            margin: 24px 0 0 0;
+        }
+        .profile-skills span {
+            display: inline-block;
+            background: #e0e7ff;
+            color: #0078d7;
+            border-radius: 16px;
+            padding: 6px 16px;
+            margin: 4px 6px;
+            font-size: 0.98em;
+            font-weight: 500;
+        }
+        .profile-bg-blob {
+            position: absolute;
+            top: -60px;
+            right: -60px;
+            width: 180px;
+            height: 180px;
+            background: radial-gradient(circle, #b6d0ff 60%, #fff0 100%);
+            z-index: 0;
+            border-radius: 50%;
+            opacity: 0.5;
         }
     </style>
 </head>
 <body>
     <div class="profile-container">
+        <div class="profile-bg-blob"></div>
+        <img class="profile-avatar" src="https://ui-avatars.com/api/?name=AKMABORHAN&background=0078d7&color=fff&size=220" alt="AKMABORHAN Avatar">
         <div class="profile-name">AKMABORHAN</div>
         <div class="profile-title">Penolong Pegawai Teknologi Maklumat</div>
         <div class="profile-desc">
             Selamat datang ke laman profil saya! Saya seorang Penolong Pegawai Teknologi Maklumat yang berdedikasi dalam menyokong dan menguruskan sistem teknologi maklumat. Saya berminat dalam pembangunan web, penyelesaian masalah IT, dan sentiasa berusaha untuk meningkatkan kemahiran dalam bidang teknologi.
+        </div>
+        <div class="profile-skills">
+            <span>Pembangunan Web</span>
+            <span>Penyelesaian Masalah IT</span>
+            <span>Pengurusan Sistem</span>
+            <span>Teknologi Maklumat</span>
+        </div>
+        <div class="profile-contact">
+            <a href="mailto:akmaborhan@email.com">Email</a>
+            <a href="#">LinkedIn</a>
         </div>
     </div>
 </body>
