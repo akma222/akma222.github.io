@@ -91,6 +91,69 @@
             border-radius: 50%;
             opacity: 0.5;
         }
+        .it-interface-section {
+            margin: 48px auto 0 auto;
+            max-width: 700px;
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 4px 18px rgba(31, 38, 135, 0.07);
+            padding: 32px 20px 28px 20px;
+            text-align: center;
+        }
+        .it-interface-section h2 {
+            color: #0078d7;
+            margin-bottom: 28px;
+            font-size: 1.5em;
+            letter-spacing: 1px;
+        }
+        .it-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 24px;
+        }
+        .it-card {
+            background: #e0e7ff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            padding: 28px 22px 22px 22px;
+            width: 200px;
+            text-align: center;
+            position: relative;
+            transition: transform 0.15s, box-shadow 0.15s;
+        }
+        .it-card:hover {
+            transform: translateY(-6px) scale(1.03);
+            box-shadow: 0 8px 24px rgba(0,120,215,0.13);
+        }
+        .it-card-icon {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+        .it-card-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #0078d7;
+            margin-bottom: 8px;
+        }
+        .it-card-desc {
+            font-size: 0.98em;
+            color: #333;
+            margin-bottom: 16px;
+        }
+        .it-card-btn {
+            display: inline-block;
+            background: #0078d7;
+            color: #fff;
+            padding: 7px 18px;
+            border-radius: 18px;
+            text-decoration: none;
+            font-size: 0.98em;
+            transition: background 0.2s;
+        }
+        .it-card-btn:hover {
+            background: #005fa3;
+        }
     </style>
 </head>
 <body>
@@ -111,6 +174,29 @@
         <div class="profile-contact">
             <a href="mailto:akmaborhan@email.com">Email</a>
             <a href="#">LinkedIn</a>
+        </div>
+    </div>
+    <div class="it-interface-section">
+        <h2>IT Support & Services</h2>
+        <div class="it-cards">
+            <div class="it-card">
+                <div class="it-card-icon">🛠️</div>
+                <div class="it-card-title">Laporan Masalah IT</div>
+                <div class="it-card-desc">Laporkan isu berkaitan komputer, rangkaian, atau perisian.</div>
+                <a class="it-card-btn" href="#">Laporkan</a>
+            </div>
+            <div class="it-card">
+                <div class="it-card-icon">💾</div>
+                <div class="it-card-title">Permohonan Perisian</div>
+                <div class="it-card-desc">Mohon pemasangan atau kemaskini perisian rasmi jabatan.</div>
+                <a class="it-card-btn" href="#">Mohon</a>
+            </div>
+            <div class="it-card">
+                <div class="it-card-icon">📊</div>
+                <div class="it-card-title">Status Sistem</div>
+                <div class="it-card-desc">Semak status terkini sistem dan aplikasi jabatan.</div>
+                <a class="it-card-btn" href="#">Semak</a>
+            </div>
         </div>
     </div>
 </body>
