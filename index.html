@@ -10,6 +10,43 @@
             background: linear-gradient(135deg, #e0e7ff 0%, #f4f4f4 100%);
             margin: 0;
             padding: 0;
+            min-height: 100vh;
+        }
+        .bg-animated {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            z-index: -2;
+            overflow: hidden;
+        }
+        .bg-blob {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.45;
+            filter: blur(16px);
+            animation: moveBlob 18s ease-in-out infinite alternate;
+        }
+        .bg-blob1 {
+            width: 340px; height: 340px;
+            background: #b6d0ff;
+            top: -80px; left: -80px;
+            animation-delay: 0s;
+        }
+        .bg-blob2 {
+            width: 260px; height: 260px;
+            background: #0078d7;
+            bottom: 40px; right: 60px;
+            animation-delay: 4s;
+        }
+        .bg-blob3 {
+            width: 180px; height: 180px;
+            background: #e0e7ff;
+            top: 60%; left: 10%;
+            animation-delay: 8s;
+        }
+        @keyframes moveBlob {
+            0%   { transform: scale(1) translateY(0) translateX(0); }
+            50%  { transform: scale(1.15) translateY(30px) translateX(40px); }
+            100% { transform: scale(1) translateY(0) translateX(0); }
         }
         .profile-container {
             max-width: 500px;
@@ -157,6 +194,11 @@
     </style>
 </head>
 <body>
+    <div class="bg-animated">
+        <div class="bg-blob bg-blob1"></div>
+        <div class="bg-blob bg-blob2"></div>
+        <div class="bg-blob bg-blob3"></div>
+    </div>
     <div class="profile-container">
         <div class="profile-bg-blob"></div>
         <img class="profile-avatar" src="https://ui-avatars.com/api/?name=AKMABORHAN&background=0078d7&color=fff&size=220" alt="AKMABORHAN Avatar">
